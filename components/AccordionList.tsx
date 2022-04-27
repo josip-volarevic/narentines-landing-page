@@ -16,7 +16,7 @@ const AccordionList: React.FC<Props> = ({ items, ...props }) => {
 			{items.map((item) => (
 				<Accordion key={item.summary} className='accordion'>
 					<AccordionSummary>
-						<Typography variant='subtitle1' className='accordion-summary-text'>
+						<Typography className='accordion-summary-text'>
 							{item.summary}
 						</Typography>
 					</AccordionSummary>
