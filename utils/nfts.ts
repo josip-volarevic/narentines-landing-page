@@ -5,7 +5,7 @@ import { generateRandom } from 'utils'
 export const generateNft = async (collection: Collection): Promise<DummyNFT> => {
 	const number = generateRandom(collection.size)
 	const randomTraitImages = collection.traits
-		.sort((curr, next) => curr.zIndex - next.zIndex)
+		.sort((curr, next) => curr.order - next.order)
 		.map((t) => {
 			const index = generateRandom(t.images.length)
 			const activeImage = t.images[Math.abs(index) % t.images.length]

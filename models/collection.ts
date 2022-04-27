@@ -3,7 +3,7 @@ import { ImageProps } from 'next/image'
 interface CollectionTrait {
 	name: string
 	images: string[]
-	zIndex: number
+	order: number
 }
 
 export interface Collection {
