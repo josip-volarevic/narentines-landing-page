@@ -1,5 +1,5 @@
-@use '../mixins/common' as *;
-@use '../mixins/breakpoints' as *;
+@use '../mixins/common.module' as *;
+@use '../mixins/breakpoints.module' as *;
 
 .header {
 	min-height: 100vh;
@@ -19,21 +19,24 @@
 	}
 
 	.background {
-		// background-image: url('../../public/assets/ui/theme-texture-gradient.png'),
-		// 	linear-gradient(to top, rgb(211, 166, 101, 0.9), rgb(211, 166, 101, 0.9));
-		// url('../../public/assets/map-colorized.png');
-		// background-repeat: repeat-x, no-repeat, no-repeat;
-		// background-position: bottom, center, center;
-		// background-size: initial, cover, cover;
-		background-image: url('../../public/assets/ui/theme-texture-gradient.png'),
-			linear-gradient(to top, rgb(211, 166, 101, 0.9), rgb(211, 166, 101, 0.9));
-		background-repeat: repeat-x, no-repeat;
-		background-position: bottom, center;
-		background-size: initial, cover;
-		position: absolute;
-		width: 100%;
-		height: 100%;
 		z-index: -1;
+
+		.background-overlay {
+			// background-image: url('../../public/assets/ui/theme-texture-gradient.png'),
+			// 	linear-gradient(to top, rgb(211, 166, 101, 0.9), rgb(211, 166, 101, 0.9));
+			// url('../../public/assets/map-colorized.png');
+			// background-repeat: repeat-x, no-repeat, no-repeat;
+			// background-position: bottom, center, center;
+			// background-size: initial, cover, cover;
+			background-image: url('../../public/assets/ui/theme-texture-gradient.png'),
+				linear-gradient(to top, rgb(211, 166, 101, 0.9), rgb(211, 166, 101, 0.9));
+			background-repeat: repeat-x, no-repeat;
+			background-position: bottom, center;
+			background-size: initial, cover;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+		}
 	}
 
 	.header-content {
@@ -70,6 +73,7 @@
 		}
 
 		.image--tba-overlay {
+			user-select: none;
 			pointer-events: none;
 			width: 450px;
 			max-width: 100%;

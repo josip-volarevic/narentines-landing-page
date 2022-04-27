@@ -12,10 +12,13 @@ import Image from 'next/Image'
 const Header: React.FC<AppBarProps> = (props) => {
 	return (
 		<AppBar position='relative' color='transparent' className='header' {...props}>
+			<div className='background'>
+				<div className='background-overlay' />
+				<Image src={mapColorizedImage} layout='fill' objectFit='cover' style={{ zIndex: -2 }} alt='' />
+			</div>
+
 			<Navigation />
 			<Logo className='logo' />
-			<div className='background' />
-			<Image src={mapColorizedImage} layout="fill" objectFit='cover' style={{ zIndex: -2 }} alt='' />
 
 			<Grid
 				container

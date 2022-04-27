@@ -1,4 +1,4 @@
-@use '../mixins/breakpoints' as *;
+@use '../mixins/breakpoints.module' as *;
 
 .article {
 	position: relative;

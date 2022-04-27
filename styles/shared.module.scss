@@ -1,4 +1,4 @@
-@use 'variables/theme' as *;
+@use 'variables/theme.module.scss' as *;
 
 body {
 	margin: 0;
@@ -14,7 +14,7 @@ body {
 }
 
 .text--important {
-	color: #c82337;
+	color: $important-color;
 }
 
 /* Scroll bar stylings */
@@ -24,15 +24,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: #a17327;
+	background: $primary-color-dark;
 	border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: #d29129;
+	background: $primary-color;
 }
 
 html {
-	scrollbar-color: #a17327 transparent;
+	scrollbar-color: $primary-color-dark transparent;
 	scrollbar-width: thin;
 }

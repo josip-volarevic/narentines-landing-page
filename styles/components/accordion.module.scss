@@ -1,4 +1,4 @@
-@use '../mixins/breakpoints' as *;
+@use '../mixins/breakpoints.module' as *;
 
 .accordion {
 	.accordion-summary-text {

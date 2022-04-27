@@ -1,14 +1,14 @@
 import { createTheme } from '@mui/material/styles'
 // import dividerImage from 'public/assets/ui/divider.png'
+import variables from 'styles/variables/theme.module.scss'
 
 const defaultTheme = createTheme({
-	palette: { primary: { main: '#d7ae6e' }, secondary: { main: '#000' } },
+	palette: { primary: { main: variables.primaryColor }, secondary: { main: variables.secondaryColor } },
 	typography: {
 		fontSize: 18,
 		fontFamily: 'Eczar',
 		body1: { fontWeight: 500 },
 		body2: { fontWeight: 500, fontFamily: 'Archivo Narrow' },
-		// subtitle1: { fontWeight: 600 },
 		h1: { fontWeight: 700, fontFamily: 'Archivo Narrow' },
 		h2: { fontWeight: 700, fontFamily: 'Archivo Narrow' },
 		h3: { fontWeight: 700, fontFamily: 'Archivo Narrow' },
@@ -41,9 +41,10 @@ const defaultTheme = createTheme({
 				root: {
 					textTransform: 'none',
 					'&.Mui-disabled': {
-						backgroundColor: 'rgb(201, 160, 97)',
+						backgroundColor: variables.primaryColor,
+						filter: 'brightness(0.85)',
 						boxShadow: '4px 2px rgba(0,0,0,0.9) !important',
-						color: 'black',
+						color: variables.secondaryColor,
 					},
 				},
 				contained: {
@@ -55,7 +56,8 @@ const defaultTheme = createTheme({
 					textTransform: 'none',
 					fontWeight: 'bold',
 					'&:hover': {
-						backgroundColor: 'rgb(201, 160, 97)',
+						backgroundColor: variables.primaryColor,
+						filter: 'brightness(0.85)',
 						boxShadow: '6px 4px rgba(0,0,0,0.9)',
 					},
 				},
