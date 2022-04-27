@@ -1,0 +1,38 @@
+@use 'variables/theme' as *;
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: url('../public/assets/ui/theme-texture.png');
+	overflow: overlay;
+}
+
+.illustration-image {
+	user-select: none;
+	pointer-events: none;
+	max-height: 680px;
+}
+
+.text--important {
+	color: #c82337;
+}
+
+/* Scroll bar stylings */
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #a17327;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #d29129;
+}
+
+html {
+	scrollbar-color: #a17327 transparent;
+	scrollbar-width: thin;
+}

@@ -1,0 +1,103 @@
+@use "../mixins/common" as *;
+@use "../mixins/breakpoints" as *;
+
+.header {
+  min-height: 100vh;
+
+  .logo {
+    width: 80%;
+    margin: auto;
+    max-height: 140px;
+    box-sizing: content-box;
+    // navigation bar height = 64 px
+    padding: calc(50vh - 32px) 0;
+
+    @include md {
+      max-height: 160px;
+      padding: 0;
+    }
+  }
+
+  .background {
+    background-image: url("../../public/assets/ui/theme-texture-gradient.png"),
+      linear-gradient(to top, rgb(211, 166, 101, 0.9), rgb(211, 166, 101, 0.9)),
+      url("../../public/assets/map-color.png");
+    background-repeat: repeat-x, no-repeat, no-repeat;
+    background-position: bottom, center, center;
+    background-size: initial, cover, cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  .header-content {
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+  }
+
+  .header-image-wrapper {
+    @include centeredRow;
+    position: relative;
+
+    .button--mint,
+    .image--tba-overlay {
+      position: absolute;
+      top: 84%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .button--mint {
+      border-radius: 0;
+      font-size: 1.5rem;
+      padding: 0.6rem 1rem;
+      width: max-content;
+
+      @include clickable(-50%, -50%);
+
+      svg {
+        width: 40px;
+        height: 32px;
+        margin-right: 1rem;
+      }
+    }
+
+    .image--tba-overlay {
+      pointer-events: none;
+      height: 120px;
+      max-width: 100%;
+    }
+  }
+
+  .header-image {
+    height: 520px;
+    width: auto;
+    padding-top: 4rem;
+    pointer-events: none;
+    user-select: none;
+
+    @include md {
+      padding-top: 1rem;
+      height: 620px;
+    }
+  }
+
+  .header-text-wrapper {
+    @include centeredColumn;
+  }
+
+  .header-text,
+  .header-text span {
+    text-align: center;
+    font-size: 1.4rem;
+    max-width: 520px;
+    margin: 0 auto;
+
+    @include md {
+      text-align: left;
+      font-size: 1.8rem;
+    }
+  }
+}

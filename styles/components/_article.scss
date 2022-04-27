@@ -1,0 +1,46 @@
+@use '../mixins/breakpoints' as *;
+
+.article {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	text-align: center;
+
+	@include sm {
+		padding: 4rem;
+	}
+
+	@include md {
+		text-align: left;
+		align-items: flex-start;
+	}
+
+	.article-index {
+		@include md {
+			position: absolute;
+			font-size: 1.4rem;
+			top: 16px;
+			left: 16px;
+			user-select: none;
+		}
+	}
+
+	.article-image {
+		pointer-events: none;
+		user-select: none;
+		width: 80px;
+		height: 80px;
+
+		@include sm {
+			width: 100px;
+			height: 100px;
+		}
+
+		@include md {
+			width: 120px;
+			height: 120px;
+		}
+	}
+}

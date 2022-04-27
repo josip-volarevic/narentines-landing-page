@@ -1,0 +1,39 @@
+@use '../mixins/breakpoints' as *;
+
+.avatar {
+	text-align: center;
+
+	h5 {
+		padding-top: 0.2rem;
+		font-size: 1.5rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+	}
+
+	@include md {
+		h5 {
+			padding-top: 0.4rem;
+			font-size: 2rem;
+		}
+
+		p {
+			font-size: 1.6rem;
+		}
+	}
+
+	img {
+		user-select: none;
+		pointer-events: none;
+		border-radius: 90%;
+		padding: 0.6rem;
+		background: 100%/100% url('../../public/assets/ui/circle-border-team.png');
+		width: 100%;
+		height: 100%;
+
+		@include md {
+			padding: 1rem;
+		}
+	}
+}

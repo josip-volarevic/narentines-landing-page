@@ -1,0 +1,20 @@
+@use '../mixins/breakpoints' as *;
+
+.accordion {
+	.accordion-summary-text {
+		font-size: 1.4rem;
+
+		@include md {
+			font-size: 1.8rem;
+		}
+	}
+
+	.accordion-details-text {
+		font-size: 1.1rem;
+		color: #333;
+
+		@include md {
+			font-size: 1.4rem;
+		}
+	}
+}

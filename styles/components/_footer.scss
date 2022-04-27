@@ -1,0 +1,44 @@
+@use '../mixins/breakpoints' as *;
+@use '../variables/theme' as *;
+
+.footer {
+	background-color: rgb(0, 0, 0, 0.9);
+	padding: 3rem 2rem;
+	color: $theme-color;
+	text-align: center;
+
+	.footer-content {
+		> *:not(:last-child) {
+			margin-bottom: 1rem;
+		}
+	}
+
+	.footer-links {
+		svg,
+		path {
+			fill: $theme-color !important;
+		}
+	}
+
+	.company-name {
+		color: white;
+		font-family: Verdana, sans-serif;
+		font-size: 1.4rem;
+		font-weight: bolder;
+		text-transform: uppercase;
+		background-color: #69754e;
+		padding: 0.2rem 0.4rem;
+		margin: 0 auto 1rem auto;
+		width: min-content;
+	}
+
+	.footer-links-title {
+		font-size: 1.6rem;
+		padding: 0.6rem;
+
+		@include md {
+			font-size: 1.4rem;
+			padding: 0.4rem;
+		}
+	}
+}

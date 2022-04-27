@@ -1,0 +1,21 @@
+@mixin clickable($x: 0px, $y: 0px) {
+	&:active {
+		transform: translate(calc($x + 1px), calc($y + 1px));
+	}
+}
+
+@mixin centeredFlex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin centeredColumn {
+	flex-direction: column;
+	@include centeredFlex;
+}
+
+@mixin centeredRow {
+	flex-direction: row;
+	@include centeredFlex;
+}

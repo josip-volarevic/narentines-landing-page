@@ -1,0 +1,15 @@
+@use '../mixins/common' as *;
+
+.navigation {
+	a {
+		@include clickable;
+	}
+
+	.navigation-links {
+		margin-left: auto;
+
+		> a:not(:last-child) {
+			margin-right: 0.5rem;
+		}
+	}
+}

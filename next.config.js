@@ -1,6 +1,22 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
+const path = require('path')
+const withPWA = require('next-pwa')
 
-module.exports = nextConfig
+module.exports = {
+	reactStrictMode: true,
+	sassOptions: {
+		includePaths: [path.join(__dirname, 'styles')],
+	},
+	webpack(config) {
+		config.module.rules.push({
+			test: /\.svg$/,
+			use: ['@svgr/webpack'],
+		})
+
+		return config
+	},
+	withPWA: {
+		pwa: {
+			dest: 'public',
+		},
+	},
+}
