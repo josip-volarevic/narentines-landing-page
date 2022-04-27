@@ -7,7 +7,7 @@ import pirateImage from 'public/assets/pirate.png'
 import MintIcon from 'public/assets/vector-icons/mint-icon.svg'
 import tbaOverlayImage from 'public/assets/tba-overlay.png'
 import mapColorizedImage from 'public/assets/map-colorized.png'
-import Image from 'next/Image'
+import Image from 'next/image'
 
 const Header: React.FC<AppBarProps> = (props) => {
 	return (
