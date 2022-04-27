@@ -6,6 +6,8 @@ import Logo from 'public/assets/logo.svg'
 import pirateImage from 'public/assets/pirate.png'
 import MintIcon from 'public/assets/vector-icons/mint-icon.svg'
 import tbaOverlayImage from 'public/assets/tba-overlay.png'
+import mapColorizedImage from 'public/assets/map-colorized.png'
+import Image from 'next/Image'
 
 const Header: React.FC<AppBarProps> = (props) => {
 	return (
@@ -13,6 +15,7 @@ const Header: React.FC<AppBarProps> = (props) => {
 			<Navigation />
 			<Logo className='logo' />
 			<div className='background' />
+			<Image src={mapColorizedImage} layout="fill" objectFit='cover' style={{ zIndex: -2 }} alt='' />
 
 			<Grid
 				container
