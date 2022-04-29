@@ -1,4 +1,5 @@
 @use '../mixins/breakpoints.module' as *;
+@use '../mixins/common.module' as *;
 
 .avatar {
 	text-align: center;
@@ -24,8 +25,7 @@
 	}
 
 	img {
-		user-select: none;
-		pointer-events: none;
+		@include unclickable;
 		border-radius: 90%;
 		padding: 0.6rem;
 		background: 100%/100% url('../../public/assets/ui/circle-border-team.png');

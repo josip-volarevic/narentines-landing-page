@@ -2,7 +2,7 @@ import React from 'react'
 import { BoxProps, Box, Typography } from '@mui/material'
 import TextImportant from 'components/TextImportant'
 
-type Position = {
+type Breakpoints = {
 	xs: string
 	sm?: string
 	md?: string
@@ -17,9 +17,10 @@ export interface ArticleProps extends BoxProps {
 	icon?: {
 		src: string
 		position: {
-			top: Position
-			left: Position
+			top: Breakpoints
+			left: Breakpoints
 		}
+		transform?: string
 	}
 }
 
@@ -27,9 +28,7 @@ const Article: React.FC<ArticleProps> = ({ title, text, icon, index, className, 
 	return (
 		<Box className={`article ${className || ''}`} {...props}>
 			<TextImportant className='article-index'>{`${index}`.padStart(2, '0')}</TextImportant>
-			<Typography variant='h4'>
-				{title}
-			</Typography>
+			<Typography variant='h4'>{title}</Typography>
 			<Typography>{text}</Typography>
 			{icon ? (
 				<Box
@@ -38,7 +37,7 @@ const Article: React.FC<ArticleProps> = ({ title, text, icon, index, className, 
 						// zIndex: -1,
 						top: icon.position.top,
 						left: icon.position.left,
-						transform: 'translate(-50%, -50%)',
+						transform: `translate(-50%, -50%) ${icon.transform}`,
 					}}
 				>
 					<img src={icon.src} className='article-image' alt='' />

@@ -1,5 +1,5 @@
 const path = require('path')
-const withPWA = require('next-pwa')
+// const withPWA = require('next-pwa')
 
 module.exports = {
 	reactStrictMode: true,
@@ -10,6 +10,12 @@ module.exports = {
 		config.module.rules.push({
 			test: /\.svg$/,
 			use: ['@svgr/webpack'],
+		})
+
+		config.module.rules.push({
+			test: /\.md$/,
+			loader: 'frontmatter-markdown-loader',
+			options: { mode: ['react-component'] },
 		})
 
 		return config

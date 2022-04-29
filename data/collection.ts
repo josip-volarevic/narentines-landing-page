@@ -38,9 +38,6 @@ import noseRing from 'public/assets/traits/nose/nose-ring.png'
 import skinRanaArvalisFemale from 'public/assets/traits/skin/rana-arvalis-female.png'
 import skinRanaArvalisMale from 'public/assets/traits/skin/rana-arvalis-male.png'
 
-// shades
-import shadeBasic from 'public/assets/traits/shade/basic.png'
-
 const backgrounds = [backgroundDaske.src, backgrounPleter.src]
 const clothes = ['', clothStripShirtGreen.src, clothTraditionalVestMenGreen.src, clothTraditionalVestWomanPink.src]
 const eyeColors = ['', eyeColorBlack.src, eyeColorHylaArborea.src]
@@ -50,7 +47,6 @@ const mouths = [mouthBasic.src, mouthReed.src, mouthSilverRing.src]
 const necklaces = ['', necklaceCrystalBlue.src, necklaceScarfBlue.src]
 const noses = ['', noseRing.src]
 const skins = [skinRanaArvalisFemale.src, skinRanaArvalisMale.src]
-const shades = ['', '', '', '', shadeBasic.src]
 
 export const exampleCollection: Collection = {
 	name: 'Narentine',
@@ -58,13 +54,12 @@ export const exampleCollection: Collection = {
 	traits: [
 		{ name: 'Background', images: backgrounds, order: 1 },
 		{ name: 'Skin', images: skins, order: 2 },
-		{ name: 'Shade', images: shades, order: 3 },
-		{ name: 'Mouth', images: mouths, order: 4 },
-		{ name: 'Eye color', images: eyeColors, order: 5 },
-		{ name: 'Eye type', images: eyeTypes, order: 6 },
-		{ name: 'Clothes', images: clothes, order: 7 },
-		{ name: 'Necklace', images: necklaces, order: 8 },
-		{ name: 'Nose', images: noses, order: 9 },
-		{ name: 'Headwear', images: headwears, order: 10 },
+		{ name: 'Mouth', images: mouths, order: 3 },
+		{ name: 'Eye color', images: eyeColors, order: 4 },
+		{ name: 'Eye type', images: eyeTypes, order: 5 },
+		{ name: 'Clothes', images: clothes, order: 6 },
+		{ name: 'Necklace', images: necklaces, order: 7 },
+		{ name: 'Nose', images: noses, order: 8 },
+		{ name: 'Headwear', images: headwears, order: 9 },
 	],
 }

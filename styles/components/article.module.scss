@@ -1,4 +1,5 @@
 @use '../mixins/breakpoints.module' as *;
+@use '../mixins/common.module' as *;
 
 .article {
 	position: relative;
@@ -28,8 +29,7 @@
 	}
 
 	.article-image {
-		pointer-events: none;
-		user-select: none;
+		@include unclickable;
 		width: 80px;
 		height: auto;
 

@@ -14,11 +14,17 @@ class MyDocument extends Document {
 					<meta charSet='utf-8' />
 					<meta httpEquiv='X-UA-Compatible' content='IE=edge' />
 
-					<meta name='description' content='Description' />
-					<meta name='keywords' content='Keywords' />
+					<meta
+						name='description'
+						content='Narentines are the collection of 8888 randomly generated NFTs exploring the mysterious seas of Solana blockchain.'
+					/>
+					<meta
+						name='keywords'
+						content='NFT, Narentines, pirates, frogs, Solana, SOL, pfp, p2e, mint, upcoming, collection'
+					/>
 
 					<link rel='manifest' href='/manifest.json' />
-					<link rel='apple-touch-icon' href='/logo512.png'></link>
+					<link rel='apple-touch-icon' href='/assets/apple-touch-icon.png'></link>
 					<meta name='primary-color' content='#317EFB' />
 
 					<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />

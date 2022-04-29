@@ -49,3 +49,5 @@ declare module '*.avif' {
 	const content: StaticImageData
 	export default content
 }
+
+declare module '*.md'

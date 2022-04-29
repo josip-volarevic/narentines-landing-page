@@ -13,6 +13,7 @@
 		font-size: 18px;
 		&--important {
 			font-size: 26px;
+			font-weight: bold;
 		}
 
 		@include sm {
@@ -67,14 +68,14 @@
 		}
 
 		.nft-overlay {
+			@include unclickable;
 			width: 100%;
 			height: auto;
-			user-select: none;
-			pointer-events: none;
 			position: absolute;
 		}
 
 		.nft-image {
+			@include unclickable;
 			width: 90%;
 			height: auto;
 			border-radius: 90%;

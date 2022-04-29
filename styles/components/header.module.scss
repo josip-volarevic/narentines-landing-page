@@ -49,15 +49,15 @@
 		@include centeredRow;
 		position: relative;
 
-		.button--mint,
-		.image--tba-overlay {
+		.header-button,
+		.header-button-overlay {
 			position: absolute;
 			top: 84%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
 
-		.button--mint {
+		.header-button {
 			border-radius: 0;
 			font-size: 1.5rem;
 			padding: 0.6rem 1rem;
@@ -72,9 +72,8 @@
 			}
 		}
 
-		.image--tba-overlay {
-			user-select: none;
-			pointer-events: none;
+		.header-button-overlay {
+			@include unclickable;
 			width: 450px;
 			max-width: 100%;
 			height: auto;
@@ -85,8 +84,7 @@
 		height: 520px;
 		width: auto;
 		padding-top: 4rem;
-		pointer-events: none;
-		user-select: none;
+		@include unclickable;
 
 		@include md {
 			padding-top: 1rem;
