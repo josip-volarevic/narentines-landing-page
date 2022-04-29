@@ -4,6 +4,11 @@
 	}
 }
 
+@mixin unclickable {
+	user-select: none;
+	pointer-events: none;
+}
+
 @mixin centeredFlex {
 	display: flex;
 	justify-content: center;

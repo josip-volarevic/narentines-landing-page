@@ -1,4 +1,6 @@
 @use 'variables/theme.module.scss' as *;
+@use 'mixins/common.module.scss' as *;
+@use 'mixins/breakpoints.module.scss' as *;
 
 body {
 	margin: 0;
@@ -7,10 +9,14 @@ body {
 	overflow: overlay;
 }
 
-.illustration-image {
-	user-select: none;
-	pointer-events: none;
+.faq-image {
+	@include unclickable;
 	max-height: 680px;
+	display: none;
+
+	@include md {
+		display: block;
+	}
 }
 
 .text--important {

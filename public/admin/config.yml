@@ -1,0 +1,153 @@
+backend:
+  name: git-gateway
+  # name: test-repo
+  branch: master
+  squash_merges: true
+publish_mode: editorial_workflow
+media_folder: public/assets
+public_folder: /assets
+logo_url: public/assets/logo.svg
+collections:
+  - name: 'common'
+    label: 'Common'
+    media_folder: common
+    files:
+      - label: 'Company'
+        name: 'company'
+        file: 'content/company.md'
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Short Name', name: 'shortName', widget: 'string' }
+          - { label: 'Logo', name: 'logo', widget: 'image', required: false }
+      - label: 'Metadata'
+        name: 'metadata'
+        file: 'content/metadata.md'
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string' }
+      - label: 'Theme'
+        name: 'theme'
+        file: 'content/theme.md'
+        fields:
+          - { label: 'Primary Color', name: 'primaryColor', widget: 'color' }
+          - { label: 'Secondary Color', name: 'secondaryColor', widget: 'color' }
+
+  - name: 'sections'
+    label: 'Sections'
+    files:
+      - label: 'Team'
+        name: 'team'
+        file: 'content/team.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string', default: 'Team', required: false }
+          - label: 'Team members'
+            label_singular: 'Team member'
+            name: 'members'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'title', widget: 'string' }
+              - { label: 'Role', name: 'subtitle', widget: 'string', required: false }
+              - { label: 'Avatar', name: 'src', widget: 'image' }
+
+      - label: 'Frequently Asked Questions'
+        name: 'frequently-asked-questions'
+        file: 'content/faq.md'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string', default: 'FAQ', required: false }
+          - { label: 'Decorative Image', name: 'image', widget: 'image', required: false }
+          - label: 'Questions and Answers'
+            label_singular: 'Item'
+            name: 'items'
+            widget: list
+            fields:
+              - { label: 'Question', name: 'summary', widget: 'string' }
+              - { label: 'Answer', name: 'details', widget: 'string' }
+
+      - label: 'Collection Showcase'
+        name: 'collection-showcase'
+        file: 'content/collection.md'
+        fields:
+          - { label: 'Name', name: 'name', widget: 'string' }
+          - { label: 'Size', name: 'size', widget: 'number' }
+          - { label: 'Placeholder Image', name: 'placeholder', widget: 'image' }
+          - label: 'Traits'
+            label_singular: 'Trait'
+            name: 'traits'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Order', name: 'order', widget: 'number' }
+              - label: 'Images'
+                name: 'images'
+                widget: 'list'
+                choose_url: false
+                fields:
+                  - { label: '', name: '', widget: 'image' }
+
+  - name: 'layout'
+    label: 'Layout'
+    files:
+      - label: 'Navigation'
+        name: 'navigation'
+        file: 'content/navigation.md'
+        fields:
+          # Select: Logo/Logo Short/Logo Text
+          - { label: 'Logo', name: 'logo', widget: 'image', required: false }
+          - { label: 'Logo Text', name: 'logo-text', widget: 'string', required: false }
+          - name: importantLinks
+            label: Important Links
+            widget: relation
+            collection: buttons
+            search_fields: [items.*.name]
+            display_fields: [items.*.name]
+            value_field: items.*
+            multiple: true
+            required: false
+          - name: links
+            label: Links
+            widget: relation
+            collection: buttons
+            search_fields: [items.*.name]
+            display_fields: [items.*.name]
+            value_field: items.*
+            multiple: true
+            required: false
+      - label: 'Header'
+        name: 'header'
+        file: 'content/header.md'
+        fields:
+          - { label: 'Text', name: 'body', widget: 'markdown' }
+      - label: 'Footer'
+        name: 'footer'
+        file: 'content/footer.md'
+        fields:
+          - { label: 'Links Title', name: 'linksTitle', widget: 'string', required: false }
+          - name: links
+            label: Links
+            widget: relation
+            collection: buttons
+            search_fields: [items.*.name]
+            display_fields: [items.*.name]
+            value_field: items.*
+            multiple: true
+            required: false
+
+
+  - name: 'buttons'
+    label: 'Buttons'
+    media_folder: vector-icons
+    files:
+      - label: 'Button Links'
+        name: 'button-links'
+        file: 'content/button-links.md'
+        fields:
+          - label: 'Button Links'
+            name: 'items'
+            label_singular: 'Item'
+            widget: 'list'
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Text', name: 'text', widget: 'string', required: false }
+              - { label: 'Icon', name: 'icon', widget: 'image', required: false }
+              - { label: 'Url', name: 'href', widget: 'string', default: '#' }
+              - { label: 'Disabled', name: 'disabled', widget: 'boolean', default: false }
+

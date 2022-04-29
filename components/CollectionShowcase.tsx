@@ -18,6 +18,7 @@ const CollectionShowcase: React.FC<Props> = ({ collection, className, ...props }
 	const makeCancelable = useCancelablePromise()
 
 	const randomize = useCallback(async () => {
+		// TODO: Generate a dummy image server side and then serve it
 		const randomNft = await makeCancelable(generateNft(collection))
 		setNft(randomNft)
 	}, [collection, makeCancelable])
