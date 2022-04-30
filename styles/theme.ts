@@ -1,9 +1,17 @@
-import { createTheme } from '@mui/material/styles'
-// import dividerImage from 'public/assets/ui/divider.png'
+import { createTheme, responsiveFontSizes } from '@mui/material/styles'
 import variables from 'styles/variables/theme.module.scss'
 
 const defaultTheme = createTheme({
 	palette: { primary: { main: variables.primaryColor }, secondary: { main: variables.secondaryColor } },
+	breakpoints: {
+		values: {
+			xs: parseInt(variables.xsWidth.replace('px', '')),
+			sm: parseInt(variables.smWidth.replace('px', '')),
+			md: parseInt(variables.mdWidth.replace('px', '')),
+			lg: parseInt(variables.lgWidth.replace('px', '')),
+			xl: parseInt(variables.xlWidth.replace('px', '')),
+		},
+	},
 	typography: {
 		fontSize: 18,
 		fontFamily: 'Eczar',
@@ -23,13 +31,15 @@ const defaultTheme = createTheme({
 				root: {
 					backgroundColor: 'unset',
 					boxShadow: 'unset',
-					'&::before': {
-						backgroundColor: 'none',
-						// backgroundImage: `url(${dividerImage.src})`,
-						backgroundImage: 'url(/assets/ui/divider.png)',
-						backgroundPositionX: '-4000px',
+					'&::after': {
+						content: "''",
+						position: 'absolute',
 						top: '-2px',
+						left: 0,
+						right: 0,
 						height: '3px',
+						backgroundImage: "url('/assets/ui/divider.png')",
+						backgroundPositionX: '-4000px',
 					},
 				},
 			},
@@ -73,4 +83,4 @@ const defaultTheme = createTheme({
 	},
 })
 
-export default defaultTheme
+export default responsiveFontSizes(defaultTheme, { factor: 1.2 })

@@ -1,5 +1,5 @@
-@use '../mixins/breakpoints.module' as *;
-@use '../mixins/common.module' as *;
+@use '../mixins/breakpoints.module.scss' as *;
+@use '../mixins/common.module.scss' as *;
 
 .collection-showcase {
 	text-align: center;

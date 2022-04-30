@@ -24,7 +24,7 @@ export const articleItems: ArticleGridItem[] = [
 				src: pirateIcon.src,
 				position: {
 					top: {
-						xs: '22%',
+						xs: '23%',
 						md: '56%',
 					},
 					left: {
@@ -46,7 +46,7 @@ export const articleItems: ArticleGridItem[] = [
 				src: flagIcon.src,
 				position: {
 					top: {
-						xs: '8%',
+						xs: '12%',
 						md: '22%',
 					},
 					left: {
@@ -69,11 +69,11 @@ export const articleItems: ArticleGridItem[] = [
 				position: {
 					top: {
 						xs: '108%',
-						md: '32%',
+						md: '30%',
 					},
 					left: {
 						xs: '80%',
-						md: '90%',
+						md: '82%',
 					},
 				},
 				transform: 'rotate(-26deg)',

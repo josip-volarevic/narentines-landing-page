@@ -9,7 +9,7 @@ const Section: React.FC<Props> = ({ title, className, children, ...props }) => {
 	return (
 		<Container maxWidth='lg' component='section' className={`section ${className || ''}`} {...props}>
 			{title ? (
-				<Typography variant='h2' className='section-title'>
+				<Typography component='h1' variant='h3' className='section-title'>
 					{title}
 				</Typography>
 			) : null}

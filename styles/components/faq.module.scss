@@ -1,0 +1,12 @@
+@use '../mixins/breakpoints.module.scss' as *;
+@use '../mixins/common.module.scss' as *;
+
+.faq-image {
+	@include unclickable;
+	max-height: 680px;
+	display: none;
+
+	@include md {
+		display: block;
+	}
+}

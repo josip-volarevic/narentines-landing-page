@@ -1,8 +1,12 @@
-@use '../mixins/breakpoints.module' as *;
+@use '../mixins/breakpoints.module.scss' as *;
 
 .accordion {
 	.accordion-summary-text {
 		font-size: 1.4rem;
+
+		@include sm {
+			font-size: 1.6rem;
+		}
 
 		@include md {
 			font-size: 1.8rem;
@@ -10,11 +14,6 @@
 	}
 
 	.accordion-details-text {
-		font-size: 1.1rem;
 		color: #333;
-
-		@include md {
-			font-size: 1.4rem;
-		}
 	}
 }

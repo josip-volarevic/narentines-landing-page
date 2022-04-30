@@ -1,8 +1,15 @@
-@use '../mixins/common.module' as *;
+@use '../mixins/common.module.scss' as *;
+@use '../mixins/breakpoints.module.scss' as *;
 
 .navigation {
 	a {
 		@include clickable;
+		height: 32px;
+
+		svg {
+			height: 100%;
+			width: auto;
+		}
 	}
 
 	.navigation-links {

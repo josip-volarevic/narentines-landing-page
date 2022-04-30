@@ -1,5 +1,5 @@
-@use '../mixins/breakpoints.module' as *;
-@use '../mixins/common.module' as *;
+@use '../mixins/breakpoints.module.scss' as *;
+@use '../mixins/common.module.scss' as *;
 
 .article {
 	position: relative;
@@ -10,10 +10,11 @@
 	text-align: center;
 
 	@include sm {
-		padding: 4rem;
+		padding: 2rem 4rem;
 	}
 
 	@include md {
+		padding: 4rem;
 		text-align: left;
 		align-items: flex-start;
 	}
@@ -30,12 +31,8 @@
 
 	.article-image {
 		@include unclickable;
-		width: 80px;
+		width: 100px;
 		height: auto;
-
-		@include sm {
-			width: 100px;
-		}
 
 		@include md {
 			width: 120px;

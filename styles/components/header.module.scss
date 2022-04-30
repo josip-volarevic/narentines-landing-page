@@ -1,5 +1,5 @@
-@use '../mixins/common.module' as *;
-@use '../mixins/breakpoints.module' as *;
+@use '../mixins/common.module.scss' as *;
+@use '../mixins/breakpoints.module.scss' as *;
 
 .header {
 	min-height: 100vh;
@@ -102,6 +102,10 @@
 		font-size: 1.4rem;
 		max-width: 520px;
 		margin: 0 auto;
+
+		@include sm {
+			font-size: 1.6rem;
+		}
 
 		@include md {
 			text-align: left;

@@ -11,7 +11,7 @@ const Avatar: React.FC<AvatarItem> = ({ src, title, subtitle, ...props }) => {
 	return (
 		<Box className='avatar' {...props}>
 			<img src={src} alt={title} />
-			<Typography variant='h5' component='p'>
+			<Typography variant='h5' component='p' className='avatar-title'>
 				{title}
 			</Typography>
 			{subtitle ? <Typography>{subtitle}</Typography> : null}

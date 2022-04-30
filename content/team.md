@@ -8,12 +8,15 @@ members:
     subtitle: product designer
     src: /assets/avatars/2.png
   - title: Leo Bošnjak
-    subtitle: developer
+    subtitle: content creator
     src: /assets/avatars/3.png
+  - title: Josip Volarević
+    subtitle: developer
+    src: /assets/avatars/4.png
   - title: Mate Žaja
     subtitle: creative director
-    src: /assets/avatars/4.png
+    src: /assets/avatars/5.png
   - title: Korina Hunjak
     subtitle: main artist
-    src: /assets/avatars/5.png
+    src: /assets/avatars/6.png
 ---

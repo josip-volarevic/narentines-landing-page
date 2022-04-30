@@ -1,15 +1,15 @@
-@use '../mixins/breakpoints.module' as *;
+@use '../mixins/breakpoints.module.scss' as *;
 
 .section {
 	position: relative;
-	padding: 2rem 0;
+	padding: 2rem 1rem;
 
 	@include sm {
-		padding: 3rem 0;
+		padding: 3rem 1.5rem;
 	}
 
 	@include md {
-		padding: 4rem 0;
+		padding: 4rem 2rem;
 	}
 
 	&::before {

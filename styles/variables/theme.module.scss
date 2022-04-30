@@ -1,13 +1,24 @@
+// colors
 $primary-color: #d7ae6e;
 $primary-color-dark: #a17327;
-
 $secondary-color: #000;
-
 $important-color: #c82337;
+
+// breakpoints
+$xs-width: 0px;
+$sm-width: 580px;
+$md-width: 900px;
+$lg-width: 1200px;
+$xl-width: 1536px;
 
 :export {
 	primaryColor: $primary-color;
 	primaryColorDark: $primary-color-dark;
 	secondaryColor: $secondary-color;
 	importantColor: $important-color;
+	xsWidth: $xs-width;
+	smWidth: $sm-width;
+	mdWidth: $md-width;
+	lgWidth: $lg-width;
+	xlWidth: $xl-width;
 }

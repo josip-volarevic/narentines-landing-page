@@ -4,24 +4,15 @@ import { romanize } from 'utils'
 import DiscordIcon from 'public/assets/vector-icons/discord-icon.svg'
 import TwitterIcon from 'public/assets/vector-icons/twitter-icon.svg'
 import MediumIcon from 'public/assets/vector-icons/medium-icon.svg'
+import carbonFreeImage from 'public/assets/carbon-free.png'
 import { attributes as footer } from 'content/footer.md'
 import { attributes as company } from 'content/company.md'
 
 const Footer: React.FC<BoxProps> = (props) => {
 	return (
 		<Box component='footer' className='footer' {...props}>
-			<Grid
-				container
-				maxWidth='lg'
-				direction={{
-					xs: 'column',
-					sm: 'row',
-				}}
-				px={4}
-				margin='0 auto'
-				className='footer-content'
-			>
-				<Grid item xs={12} sm={6}>
+			<Grid container maxWidth='lg' margin='0 auto' className='footer-content'>
+				<Grid item xs={12} md={4}>
 					{company.logo ? (
 						// TODO: implement company logo image
 						<img src='' alt={company.shortName} />
@@ -37,7 +28,7 @@ const Footer: React.FC<BoxProps> = (props) => {
 					) : null}
 				</Grid>
 
-				<Grid item xs={12} sm={6}>
+				<Grid item xs={12} md={4}>
 					<Typography variant='body2' className='footer-links-title'>
 						{footer.linksTitle}
 					</Typography>
@@ -57,6 +48,10 @@ const Footer: React.FC<BoxProps> = (props) => {
 							</Button>
 						))} */}
 					</Box>
+				</Grid>
+
+				<Grid item xs={12} md={4}>
+					<img src={carbonFreeImage.src} alt='carbon-free' className='footer-image' />
 				</Grid>
 			</Grid>
 		</Box>

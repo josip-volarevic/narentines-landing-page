@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  # name: test-repo
+  # name: git-gateway
+  name: test-repo
   branch: master
   squash_merges: true
 publish_mode: editorial_workflow
@@ -108,7 +108,7 @@ collections:
             collection: buttons
             search_fields: [items.*.name]
             display_fields: [items.*.name]
-            value_field: items.*.*
+            value_field: items.*
             multiple: true
             required: false
       - label: 'Header'
@@ -125,9 +125,9 @@ collections:
             label: Links
             widget: relation
             collection: buttons
-            search_fields: [item.*.name]
-            display_fields: [item.*.name]
-            value_field: item.*
+            search_fields: [items.*.name]
+            display_fields: [items.*.name]
+            value_field: items.*
             multiple: true
             required: false
 

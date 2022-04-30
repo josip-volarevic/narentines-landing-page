@@ -1,5 +1,5 @@
-@use '../mixins/breakpoints.module' as *;
-@use '../variables/theme.module' as *;
+@use '../mixins/breakpoints.module.scss' as *;
+@use '../variables/theme.module.scss' as *;
 
 .footer {
 	background-color: rgb(0, 0, 0, 0.9);
@@ -9,7 +9,11 @@
 
 	.footer-content {
 		> *:not(:last-child) {
-			margin-bottom: 1rem;
+			margin-bottom: 4rem;
+
+			@include md {
+				margin-bottom: 0rem;
+			}
 		}
 	}
 
@@ -39,6 +43,15 @@
 		@include md {
 			font-size: 1.4rem;
 			padding: 0.4rem;
+		}
+	}
+
+	.footer-image {
+		width: 100%;
+		max-width: 220px;
+
+		@include md {
+			max-width: 280px;
 		}
 	}
 }

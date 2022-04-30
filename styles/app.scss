@@ -1,19 +1,20 @@
 // Mixins
-@use 'mixins/breakpoints.module';
-@use 'mixins/common.module';
+@use 'mixins/breakpoints.module.scss';
+@use 'mixins/common.module.scss';
 
 // Components
-@use 'components/accordion.module';
-@use 'components/avatar.module';
-@use 'components/article.module';
-@use 'components/header.module';
-@use 'components/footer.module';
-@use 'components/navigation.module';
-@use 'components/section.module';
-@use 'components/collection-showcase.module';
+@use 'components/faq.module.scss';
+@use 'components/accordion.module.scss';
+@use 'components/avatar.module.scss';
+@use 'components/article.module.scss';
+@use 'components/header.module.scss';
+@use 'components/footer.module.scss';
+@use 'components/navigation.module.scss';
+@use 'components/section.module.scss';
+@use 'components/collection-showcase.module.scss';
 
 // Variables
 @use 'variables/theme.module.scss';
 
 // Other
-@use 'shared.module';
+@use 'shared.module.scss';

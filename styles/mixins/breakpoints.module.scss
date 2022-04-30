@@ -1,8 +1,4 @@
-$xs-width: 0px;
-$sm-width: 600px;
-$md-width: 900px;
-$lg-width: 1200px;
-$xl-width: 1536px;
+@use '../variables/theme.module.scss' as *;
 
 @mixin xs {
 	@media (max-width: #{$sm-width - 1px}) {

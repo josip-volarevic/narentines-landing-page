@@ -9,16 +9,6 @@ body {
 	overflow: overlay;
 }
 
-.faq-image {
-	@include unclickable;
-	max-height: 680px;
-	display: none;
-
-	@include md {
-		display: block;
-	}
-}
-
 .text--important {
 	color: $important-color;
 }

@@ -28,7 +28,9 @@ const Article: React.FC<ArticleProps> = ({ title, text, icon, index, className, 
 	return (
 		<Box className={`article ${className || ''}`} {...props}>
 			<TextImportant className='article-index'>{`${index}`.padStart(2, '0')}</TextImportant>
-			<Typography variant='h4'>{title}</Typography>
+			<Typography variant='h4' component='h3'>
+				{title}
+			</Typography>
 			<Typography>{text}</Typography>
 			{icon ? (
 				<Box
