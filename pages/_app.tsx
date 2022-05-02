@@ -2,11 +2,15 @@ import { useEffect } from 'react'
 import type { AppProps } from 'next/app'
 import { ThemeProvider, CssBaseline } from '@mui/material'
 import theme from 'styles/theme'
-import 'styles/app.scss'
 import Head from 'next/head'
+import TagManager from 'react-gtm-module'
+import 'styles/app.scss'
 
 function MyApp({ Component, pageProps }: AppProps) {
 	useEffect(() => {
+		// initialize gtag analytics
+		TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER || '' })
+
 		if ('serviceWorker' in navigator) {
 			window.addEventListener('load', function () {
 				navigator.serviceWorker.register('/sw.js').then(
@@ -24,6 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeProvider theme={theme}>
 			<CssBaseline />
+
 			<Head>
 				<meta
 					name='viewport'

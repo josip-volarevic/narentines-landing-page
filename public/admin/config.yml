@@ -1,12 +1,12 @@
 backend:
-  # name: git-gateway
-  name: test-repo
+  name: git-gateway
+  # name: test-repo
   branch: master
   squash_merges: true
 publish_mode: editorial_workflow
 media_folder: public/assets
 public_folder: /assets
-logo_url: public/assets/logo.svg
+logo_url: /assets/logo.svg
 collections:
   - name: 'common'
     label: 'Common'

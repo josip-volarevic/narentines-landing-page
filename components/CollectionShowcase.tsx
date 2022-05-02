@@ -52,7 +52,7 @@ const CollectionShowcase: React.FC<Props> = ({ collection, className, ...props }
 			<Grid item xs={6} md={3} order={{ xs: 4, md: 4 }}>
 				<Box>
 					<Box className='collection-showcase-actions'>
-						<IconButton aria-label='randomize-nft' onClick={randomize}>
+						<IconButton id='randomize-button' aria-label='randomize-nft' onClick={randomize}>
 							<RandomizeIcon className='collection-showcase-icon' />
 						</IconButton>
 						<IconButton

@@ -10,7 +10,7 @@ const AvatarList: React.FC<Props> = ({ items, ...props }) => {
 	return (
 		<Grid container {...props}>
 			{items.map((item) => (
-				<Grid item xs={6} md={4} key={item.title} p={{ xs: 2, sm: 3, md: 4 }}>
+				<Grid item xs={6} md={4} key={item.title} p={{ xs: 1, sm: 3, md: 4 }}>
 					<Avatar {...item} />
 				</Grid>
 			))}
