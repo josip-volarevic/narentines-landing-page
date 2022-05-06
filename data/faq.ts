@@ -4,7 +4,7 @@ export const faqItems: AccordionItem[] = [
 	{
 		summary: 'Where does Narentines name come from?',
 		details:
-			'Narentines were South Slavic tribe that occupied an area of southern Dalmatia centered at the river of Neretva, which in their time was called Narenta, hence the name Narentines!',
+			'Narentines were a South Slavic tribe that occupied an area of southern Dalmatia centered at the river of Neretva, which in their time was called Narenta, hence the name Narentines!',
 	},
 	{
 		summary: 'When is the mint?',

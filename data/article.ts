@@ -19,7 +19,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 1,
 			title: 'Build an amazing community',
-			text: "Gather pirates lovers' across social medias",
+			text: "Gather pirates lovers' across social media.",
 			icon: {
 				src: pirateIcon.src,
 				position: {
@@ -41,7 +41,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 2,
 			title: 'Minting',
-			text: 'Bring your favorite rum drinker on the Solana blockchain.',
+			text: 'Bring your favorite rum drinker to the Solana blockchain.',
 			icon: {
 				src: flagIcon.src,
 				position: {
@@ -115,7 +115,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 6,
 			title: 'Amphora aged wine',
-			text: 'After hard raids is there any better way to relax then with the bottle of rum? Wll, there is! Relax with a wine, aged under the sea, and guarded by mysterious creatures.',
+			text: 'After hard raids is there any better way to relax then with the bottle of rum? Well, there is! Relax with a wine, aged under the sea, and guarded by mysterious creatures.',
 			icon: {
 				src: amphoraIcon.src,
 				position: {
@@ -137,7 +137,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 7,
 			title: 'Dress like a proper pirate',
-			text: "What is a good pirate without, let's say: tricorne or maybe an eye-patch? Not only that you will be the fierce ruler of the seas, but you will also be the most stylish ruler as well",
+			text: "What is a good pirate without, let's say: a tricorne or maybe an eye-patch? Not only that you will be the fierce ruler of the seas, but you will also be the most stylish ruler as well.",
 			icon: {
 				src: merchIcon.src,
 				position: {

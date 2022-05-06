@@ -52,8 +52,7 @@ const defaultTheme = createTheme({
 					textTransform: 'none',
 					'&.Mui-disabled': {
 						backgroundColor: variables.primaryColor,
-						filter: 'brightness(0.85)',
-						boxShadow: '4px 2px rgba(0,0,0,0.9) !important',
+						boxShadow: '4px 2px rgba(0,0,0,0.9)',
 						color: variables.secondaryColor,
 					},
 				},
