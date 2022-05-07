@@ -51,7 +51,7 @@ const Footer: React.FC<BoxProps> = (props) => {
 				</Grid>
 
 				<Grid item xs={12} md={4}>
-					<img src={carbonFreeImage.src} alt='carbon-free' className='footer-image' />
+					<img src={carbonFreeImage.src} alt='carbon-free' className='footer-image' loading='lazy' />
 				</Grid>
 			</Grid>
 		</Box>

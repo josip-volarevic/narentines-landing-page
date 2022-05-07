@@ -10,7 +10,7 @@ export interface AvatarItem extends BoxProps {
 const Avatar: React.FC<AvatarItem> = ({ src, title, subtitle, ...props }) => {
 	return (
 		<Box className='avatar' {...props}>
-			<img src={src} alt={title} />
+			<img src={src} alt={title} loading='lazy' />
 			<Typography variant='h5' component='p' className='avatar-title'>
 				{title}
 			</Typography>

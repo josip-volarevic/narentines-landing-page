@@ -23,6 +23,8 @@ function MyApp({ Component, pageProps }: AppProps) {
 				)
 			})
 		}
+
+		window.history.scrollRestoration = 'manual'
 	}, [])
 
 	return (
@@ -34,7 +36,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 					name='viewport'
 					content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover'
 				/>
-				<title>Narentines</title>
+				<title>Narentines NFT</title>
 			</Head>
 
 			<Component {...pageProps} />

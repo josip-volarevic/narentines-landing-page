@@ -1,5 +1,6 @@
 @use '../mixins/common.module.scss' as *;
 @use '../mixins/breakpoints.module.scss' as *;
+@use '../mixins/animations.module.scss' as *;
 
 .header {
 	min-height: 100vh;
@@ -11,6 +12,7 @@
 		box-sizing: content-box;
 		// navigation bar height = 64 px
 		padding: calc(50vh - 32px) 0;
+		@include defaultFadeIn;
 
 		@include md {
 			max-height: 160px;
@@ -22,12 +24,6 @@
 		z-index: -1;
 
 		.background-overlay {
-			// background-image: url('../../public/assets/ui/theme-texture-gradient.png'),
-			// 	linear-gradient(to top, rgb(211, 166, 101, 0.9), rgb(211, 166, 101, 0.9));
-			// url('../../public/assets/map-colorized.png');
-			// background-repeat: repeat-x, no-repeat, no-repeat;
-			// background-position: bottom, center, center;
-			// background-size: initial, cover, cover;
 			background-image: url('../../public/assets/ui/theme-texture-gradient.png'),
 				linear-gradient(to top, rgb(211, 166, 101, 0.9), rgb(211, 166, 101, 0.9));
 			background-repeat: repeat-x, no-repeat;
@@ -43,6 +39,9 @@
 		margin: 0 auto;
 		display: flex;
 		text-align: center;
+
+		animation-name: slideIn;
+		animation-duration: 1s;
 	}
 
 	.header-image-wrapper {

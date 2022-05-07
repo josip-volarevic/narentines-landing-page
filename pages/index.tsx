@@ -36,7 +36,7 @@ const Home: NextPage = () => {
 					<Section id='faq' title={faq.title}>
 						<Box display='flex'>
 							<AccordionList items={faq.items} mr={{ md: 4 }} />
-							<img src={faq.image} alt='' className='faq-image' />
+							<img src={faq.image} alt='' className='faq-image' loading='lazy' />
 						</Box>
 					</Section>
 				) : null}

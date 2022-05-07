@@ -43,9 +43,9 @@ const CollectionShowcase: React.FC<Props> = ({ collection, className, ...props }
 
 			<Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
 				<Box className='nft-image-wrapper'>
-					<img src={nIconImage.src} className='n-logo' alt='' />
-					<img src='/assets/ui/nft-frame.svg' className='nft-overlay' alt='' />
-					<img src={nft.image} className='nft-image' alt={collection.name} />
+					<img src={nIconImage.src} className='n-logo' alt='' loading='lazy' />
+					<img src='/assets/ui/nft-frame.svg' className='nft-overlay' alt='' loading='lazy' />
+					<img src={nft.image} className='nft-image' alt={collection.name} loading='lazy' />
 				</Box>
 			</Grid>
 

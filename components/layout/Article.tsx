@@ -42,7 +42,7 @@ const Article: React.FC<ArticleProps> = ({ title, text, icon, index, className, 
 						transform: `translate(-50%, -50%) ${icon.transform}`,
 					}}
 				>
-					<img src={icon.src} className='article-image' alt='' />
+					<img src={icon.src} className='article-image' alt='' loading='lazy' />
 				</Box>
 			) : null}
 		</Box>

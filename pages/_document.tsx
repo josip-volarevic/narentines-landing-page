@@ -25,7 +25,7 @@ class MyDocument extends Document {
 
 					<link rel='manifest' href='/manifest.json' />
 					<link rel='apple-touch-icon' href='/apple-touch-icon.png'></link>
-					<meta name='primary-color' content='#317EFB' />
+					<meta name='theme-color' content='#d7ae6e' />
 
 					<link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='' />
 
