@@ -23,15 +23,6 @@ const Navigation: React.FC<ToolbarProps> = (props) => {
 			<Box className='navigation-items navigation-items--right'>
 				{/* Mobile */}
 				<Hidden smUp>
-					{/* <IconButton
-						aria-label='Navigation menu'
-						aria-controls='nav-menu'
-						aria-haspopup='true'
-						onClick={handleOpenNavMenu}
-						color='inherit'
-					>
-						<MenuIcon />
-					</IconButton> */}
 					<Button variant='contained' onClick={setMenuAnchorEl}>
 						Social
 					</Button>
@@ -44,19 +35,19 @@ const Navigation: React.FC<ToolbarProps> = (props) => {
 						keepMounted
 					>
 						<MenuItem onClick={resetMenuAnchorEl}>
-							<Button color='secondary' href='https://twitter.com/NarentinesNFT'>
+							<Button color='secondary' href='https://twitter.com/NarentinesNFT' rel='noreferrer' target='_blank'>
 								<TwitterIcon />
 								Twitter
 							</Button>
 						</MenuItem>
 						<MenuItem onClick={resetMenuAnchorEl}>
-							<Button color='secondary' href='https://discord.com/invite/narentines'>
+							<Button color='secondary' href='https://discord.com/invite/narentines' rel='noreferrer' target='_blank'>
 								<DiscordIcon />
 								Discord
 							</Button>
 						</MenuItem>
 						<MenuItem onClick={resetMenuAnchorEl}>
-							<Button color='secondary' href='https://narentines.medium.com'>
+							<Button color='secondary' href='https://medium.com/@NarentinesNFT' rel='noreferrer' target='_blank'>
 								<MediumIcon />
 								Medium
 							</Button>
@@ -66,13 +57,31 @@ const Navigation: React.FC<ToolbarProps> = (props) => {
 
 				{/* Desktop */}
 				<Hidden smDown>
-					<Button variant='contained' aria-label='twitter' href='https://twitter.com/NarentinesNFT'>
+					<Button
+						variant='contained'
+						aria-label='twitter'
+						href='https://twitter.com/NarentinesNFT'
+						rel='noreferrer'
+						target='_blank'
+					>
 						<TwitterIcon />
 					</Button>
-					<Button variant='contained' aria-label='discord' href='https://discord.com/invite/narentines'>
+					<Button
+						variant='contained'
+						aria-label='discord'
+						href='https://discord.com/invite/narentines'
+						rel='noreferrer'
+						target='_blank'
+					>
 						<DiscordIcon />
 					</Button>
-					<Button variant='contained' aria-label='medium' href='https://narentines.medium.com'>
+					<Button
+						variant='contained'
+						aria-label='medium'
+						href='https://medium.com/@NarentinesNFT'
+						rel='noreferrer'
+						target='_blank'
+					>
 						<MediumIcon />
 					</Button>
 				</Hidden>

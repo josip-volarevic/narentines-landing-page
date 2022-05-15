@@ -16,7 +16,7 @@
 
 		@include md {
 			max-height: 160px;
-			padding: 0;
+			padding: 4rem 2rem;
 		}
 	}
 
@@ -24,6 +24,7 @@
 		z-index: -1;
 
 		.background-overlay {
+			@include unclickable;
 			background-image: url('../../public/assets/ui/theme-texture-gradient.png'),
 				linear-gradient(to top, rgb(211, 166, 101, 0.9), rgb(211, 166, 101, 0.9));
 			background-repeat: repeat-x, no-repeat;
@@ -73,7 +74,7 @@
 
 		.header-button-overlay {
 			@include unclickable;
-			width: 450px;
+			width: 460px;
 			max-width: 100%;
 			height: auto;
 		}

@@ -7,6 +7,7 @@ import MediumIcon from 'public/assets/vector-icons/medium-icon.svg'
 import carbonFreeImage from 'public/assets/carbon-free.png'
 import { attributes as footer } from 'content/footer.md'
 import { attributes as company } from 'content/company.md'
+import Image from 'next/image'
 
 const Footer: React.FC<BoxProps> = (props) => {
 	return (
@@ -15,7 +16,7 @@ const Footer: React.FC<BoxProps> = (props) => {
 				<Grid item xs={12} md={4}>
 					{company.logo ? (
 						// TODO: implement company logo image
-						<img src='' alt={company.shortName} />
+						<Image layout='raw' src='' alt={company.shortName} />
 					) : (
 						<Typography variant='body2' className='company-name'>
 							{company.shortName}
@@ -39,7 +40,7 @@ const Footer: React.FC<BoxProps> = (props) => {
 						<Button aria-label='discord' href='https://discord.com/invite/narentines'>
 							<DiscordIcon />
 						</Button>
-						<Button aria-label='medium' href='https://narentines.medium.com'>
+						<Button aria-label='medium' href='https://medium.com/@NarentinesNFT'>
 							<MediumIcon />
 						</Button>
 						{/* {footer.links.map((link: any) => (
@@ -51,7 +52,16 @@ const Footer: React.FC<BoxProps> = (props) => {
 				</Grid>
 
 				<Grid item xs={12} md={4}>
-					<img src={carbonFreeImage.src} alt='carbon-free' className='footer-image' loading='lazy' />
+					<Box className='footer-image-wrapper'>
+						<Image
+							src={carbonFreeImage}
+							alt='carbon-free'
+							layout='responsive'
+							width={280}
+							height={72}
+							lazyBoundary='400px'
+						/>
+					</Box>
 				</Grid>
 			</Grid>
 		</Box>

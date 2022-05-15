@@ -13,6 +13,7 @@ import { attributes as team } from 'content/team.md'
 import { attributes as faq } from 'content/faq.md'
 import { attributes as collection } from 'content/collection.md'
 // import { attributes as articles } from 'content/articles.md'
+import Image from 'next/image'
 
 const Home: NextPage = () => {
 	return (
@@ -36,7 +37,15 @@ const Home: NextPage = () => {
 					<Section id='faq' title={faq.title}>
 						<Box display='flex'>
 							<AccordionList items={faq.items} mr={{ md: 4 }} />
-							<img src={faq.image} alt='' className='faq-image' loading='lazy' />
+							<Image
+								src={faq.image}
+								alt=''
+								className='faq-image'
+								layout='raw'
+								height={680}
+								width={360}
+								lazyBoundary='400px'
+							/>
 						</Box>
 					</Section>
 				) : null}

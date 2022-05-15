@@ -16,7 +16,15 @@ const Header: React.FC<AppBarProps> = (props) => {
 		<AppBar position='relative' color='transparent' className='header' {...props}>
 			<div className='background'>
 				<div className='background-overlay' />
-				<Image src={mapColorizedImage} layout='fill' objectFit='cover' style={{ zIndex: -2 }} alt='' />
+				<Image
+					src={mapColorizedImage}
+					layout='fill'
+					objectFit='cover'
+					style={{ zIndex: -2 }}
+					alt=''
+					quality={50}
+					priority
+				/>
 			</div>
 
 			<Navigation />
@@ -33,12 +41,20 @@ const Header: React.FC<AppBarProps> = (props) => {
 				}}
 			>
 				<Grid item xs={12} md={6} className='header-image-wrapper'>
-					<img src={pirateImage.src} className='header-image' alt='' />
-					<Button variant='contained' href='#' className='header-button' disabled>
+					<Image src={pirateImage} className='header-image' alt='' layout='raw' height={620} width={360} priority />
+					<Button variant='contained' href='#mint' className='header-button' disabled rel='noreferrer' target='_blank'>
 						<MintIcon />
 						Mint a Narentine
 					</Button>
-					<img src={tbaOverlayImage.src} className='header-button-overlay' alt='' />
+					<Image
+						src={tbaOverlayImage}
+						className='header-button-overlay'
+						alt=''
+						layout='raw'
+						width={460}
+						height={120}
+						priority
+					/>
 				</Grid>
 
 				{/* {header.body ? (

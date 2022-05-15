@@ -19,9 +19,9 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 1,
 			title: 'Build an amazing community',
-			text: "Gather pirates lovers' across social media.",
+			text: "Gather pirates lovers' across internet.",
 			icon: {
-				src: pirateIcon.src,
+				src: pirateIcon,
 				position: {
 					top: {
 						xs: '23%',
@@ -43,7 +43,7 @@ export const articleItems: ArticleGridItem[] = [
 			title: 'Minting',
 			text: 'Bring your favorite rum drinker to the Solana blockchain.',
 			icon: {
-				src: flagIcon.src,
+				src: flagIcon,
 				position: {
 					top: {
 						xs: '12%',
@@ -65,7 +65,7 @@ export const articleItems: ArticleGridItem[] = [
 			title: 'Staking',
 			text: 'Let your Narentine enjoy and hang out with other Narentines, while you get $GOODS in return.',
 			icon: {
-				src: lootIcon.src,
+				src: lootIcon,
 				position: {
 					top: {
 						xs: '108%',
@@ -95,7 +95,7 @@ export const articleItems: ArticleGridItem[] = [
 			title: 'Go on raids',
 			text: 'Send your ships on expeditions. Let the crew roam through the paths that are still unknown to the rest of the world and be amazed on what precious items they bring back.',
 			icon: {
-				src: raidsIcon.src,
+				src: raidsIcon,
 				position: {
 					top: {
 						xs: '4%',
@@ -117,7 +117,7 @@ export const articleItems: ArticleGridItem[] = [
 			title: 'Amphora aged wine',
 			text: 'After hard raids is there any better way to relax then with the bottle of rum? Well, there is! Relax with a wine, aged under the sea, and guarded by mysterious creatures.',
 			icon: {
-				src: amphoraIcon.src,
+				src: amphoraIcon,
 				position: {
 					top: {
 						xs: '16%',
@@ -139,7 +139,7 @@ export const articleItems: ArticleGridItem[] = [
 			title: 'Dress like a proper pirate',
 			text: "What is a good pirate without, let's say: a tricorne or maybe an eye-patch? Not only that you will be the fierce ruler of the seas, but you will also be the most stylish ruler as well.",
 			icon: {
-				src: merchIcon.src,
+				src: merchIcon,
 				position: {
 					top: {
 						xs: '100%',

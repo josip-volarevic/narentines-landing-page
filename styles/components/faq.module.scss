@@ -3,7 +3,6 @@
 
 .faq-image {
 	@include unclickable;
-	max-height: 680px;
 	display: none;
 
 	@include md {

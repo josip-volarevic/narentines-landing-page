@@ -9,7 +9,9 @@ import 'styles/app.scss'
 function MyApp({ Component, pageProps }: AppProps) {
 	useEffect(() => {
 		// initialize gtag analytics
-		TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER || '' })
+		if (process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER) {
+			TagManager.initialize({ gtmId: process.env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER })
+		}
 
 		if ('serviceWorker' in navigator) {
 			window.addEventListener('load', function () {

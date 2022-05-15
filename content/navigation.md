@@ -14,7 +14,7 @@ links:
     icon: /assets/vector-icons/discord-icon.svg
     disabled: false
   - name: Medium
-    href: https://narentines.medium.com
+    href: https://medium.com/@NarentinesNFT
     icon: /assets/vector-icons/medium-icon.svg
     disabled: false
 ---

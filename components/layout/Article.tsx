@@ -1,6 +1,7 @@
 import React from 'react'
 import { BoxProps, Box, Typography } from '@mui/material'
 import TextImportant from 'components/TextImportant'
+import Image, { StaticImageData } from 'next/image'
 
 type Breakpoints = {
 	xs: string
@@ -15,7 +16,7 @@ export interface ArticleProps extends BoxProps {
 	title: string
 	text: string
 	icon?: {
-		src: string
+		src: string | StaticImageData
 		position: {
 			top: Breakpoints
 			left: Breakpoints
@@ -42,7 +43,15 @@ const Article: React.FC<ArticleProps> = ({ title, text, icon, index, className, 
 						transform: `translate(-50%, -50%) ${icon.transform}`,
 					}}
 				>
-					<img src={icon.src} className='article-image' alt='' loading='lazy' />
+					<Image
+						src={icon.src}
+						layout='raw'
+						width={180}
+						height={180}
+						className='article-image'
+						alt=''
+						lazyBoundary='400px'
+					/>
 				</Box>
 			) : null}
 		</Box>

@@ -59,6 +59,7 @@ collections:
             name: 'items'
             widget: list
             fields:
+              - { label: 'Id', name: 'id', widget: 'string' }
               - { label: 'Question', name: 'summary', widget: 'string' }
               - { label: 'Answer', name: 'details', widget: 'string' }
 
