@@ -10,9 +10,6 @@ members:
   - title: Leo Bošnjak
     subtitle: content creator
     src: /assets/avatars/3.png
-  - title: Josip Volarević
-    subtitle: developer
-    src: /assets/avatars/4.png
   - title: Mate Žaja
     subtitle: creative director
     src: /assets/avatars/5.png
