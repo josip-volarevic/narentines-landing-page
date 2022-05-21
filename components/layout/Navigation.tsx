@@ -12,11 +12,11 @@ const Navigation: React.FC<ToolbarProps> = (props) => {
 	return (
 		<Toolbar component='nav' className='navigation' {...props}>
 			<Box className='navigation-items navigation-items--left'>
-				<Button variant='contained' href='#whitepaper' rel='noreferrer' target='_blank'>
+				{/* <Button variant='contained' href='#whitepaper' rel='noreferrer' target='_blank'>
 					White Paper
-				</Button>
-				<Button variant='contained' href='#litepaper' rel='noreferrer' target='_blank'>
-					Lite
+				</Button> */}
+				<Button variant='contained' href='/assets/litepaper.pdf' rel='noreferrer' target='_blank'>
+					Lite Paper
 				</Button>
 			</Box>
 
