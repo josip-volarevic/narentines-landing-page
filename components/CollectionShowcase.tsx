@@ -40,33 +40,9 @@ const CollectionShowcase: React.FC<Props> = ({ collection, className, ...props }
 
 			<Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
 				<Box className='nft-image-wrapper'>
-					<Image
-						src={nIconImage}
-						className='short-logo'
-						alt=''
-						layout='raw'
-						height={42}
-						width={42}
-						lazyBoundary='400px'
-					/>
-					<Image
-						src='/assets/ui/nft-frame.svg'
-						className='nft-overlay'
-						alt=''
-						layout='raw'
-						height={512}
-						width={512}
-						lazyBoundary='400px'
-					/>
-					<Image
-						src={nft.image}
-						className='nft-image'
-						alt={collection.name}
-						layout='raw'
-						height={512}
-						width={512}
-						lazyBoundary='400px'
-					/>
+					<Image src={nIconImage} className='short-logo' alt='' layout='raw' height={42} width={42} />
+					<Image src='/assets/ui/nft-frame.svg' className='nft-overlay' alt='' layout='raw' height={512} width={512} />
+					<Image src={nft.image} className='nft-image' alt={collection.name} layout='raw' height={512} width={512} />
 				</Box>
 			</Grid>
 
@@ -89,7 +65,6 @@ const CollectionShowcase: React.FC<Props> = ({ collection, className, ...props }
 								layout='raw'
 								width={34}
 								height={34}
-								lazyBoundary='400px'
 							/>
 						</IconButton>
 					</Box>

@@ -6,12 +6,14 @@ import Logo from 'public/assets/logo.svg'
 import pirateImage from 'public/assets/pirate.png'
 import MintIcon from 'public/assets/vector-icons/mint-icon.svg'
 import tbaOverlayImage from 'public/assets/tba-overlay.png'
-import mapColorizedImage from 'public/assets/map-colorized.png'
+// import mapColorizedImage from 'public/assets/map-colorized.png'
+import mapColorizedImage from 'public/assets/map-colorized.webp'
 import Image from 'next/image'
 // import { attributes as header } from 'content/header.md'
 
 const Header: React.FC<AppBarProps> = (props) => {
 	// console.log(header)
+
 	return (
 		<AppBar position='relative' color='transparent' className='header' {...props}>
 			<div className='background'>
@@ -22,7 +24,7 @@ const Header: React.FC<AppBarProps> = (props) => {
 					objectFit='cover'
 					style={{ zIndex: -2 }}
 					placeholder='blur'
-					quality={40}
+					quality={50}
 					priority
 					alt=''
 				/>

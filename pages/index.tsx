@@ -37,15 +37,7 @@ const Home: NextPage = () => {
 					<Section id='faq' title={faq.title}>
 						<Box display='flex'>
 							<AccordionList items={faq.items} mr={{ md: 4 }} />
-							<Image
-								src={faq.image}
-								alt=''
-								className='faq-image'
-								layout='raw'
-								height={680}
-								width={360}
-								lazyBoundary='400px'
-							/>
+							<Image src={faq.image} alt='' className='faq-image' layout='raw' height={680} width={360} />
 						</Box>
 					</Section>
 				) : null}

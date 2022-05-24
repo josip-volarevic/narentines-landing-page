@@ -43,15 +43,7 @@ const Article: React.FC<ArticleProps> = ({ title, text, icon, index, className, 
 						transform: `translate(-50%, -50%) ${icon.transform}`,
 					}}
 				>
-					<Image
-						src={icon.src}
-						layout='raw'
-						width={180}
-						height={180}
-						className='article-image'
-						alt=''
-						lazyBoundary='400px'
-					/>
+					<Image src={icon.src} layout='raw' width={180} height={180} className='article-image' alt='' />
 				</Box>
 			) : null}
 		</Box>

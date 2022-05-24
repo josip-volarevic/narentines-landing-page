@@ -59,7 +59,7 @@ const Footer: React.FC<BoxProps> = (props) => {
 							layout='responsive'
 							width={280}
 							height={72}
-							lazyBoundary='400px'
+							lazyBoundary='500px'
 						/>
 					</Box>
 				</Grid>
