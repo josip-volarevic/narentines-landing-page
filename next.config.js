@@ -1,7 +1,7 @@
 const path = require('path')
-// const withPWA = require('next-pwa')
+const withPWA = require('next-pwa')
 
-module.exports = {
+module.exports = withPWA({
 	reactStrictMode: true,
 	experimental: {
 		images: {
@@ -25,9 +25,9 @@ module.exports = {
 
 		return config
 	},
-	withPWA: {
-		pwa: {
-			dest: 'public',
-		},
+	pwa: {
+		dest: 'public',
+		disable: process.env.NEXT_NODE_ENV === 'dev',
+		mode: 'production',
 	},
-}
+})

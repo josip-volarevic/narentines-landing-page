@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://narentines.com
+
+# Sitemaps
+Sitemap: https://narentines.com/sitemap.xml

@@ -21,9 +21,10 @@ const Header: React.FC<AppBarProps> = (props) => {
 					layout='fill'
 					objectFit='cover'
 					style={{ zIndex: -2 }}
-					alt=''
-					quality={50}
+					placeholder='blur'
+					quality={40}
 					priority
+					alt=''
 				/>
 			</div>
 
