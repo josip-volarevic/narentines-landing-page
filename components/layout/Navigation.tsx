@@ -1,9 +1,9 @@
 import React from 'react'
-import { ToolbarProps, Toolbar, Button, Hidden, Box, Menu, MenuItem, Typography } from '@mui/material'
+import { ToolbarProps, Toolbar, Button, Hidden, Box, Menu, MenuItem } from '@mui/material'
 import DiscordIcon from 'public/assets/vector-icons/discord-icon.svg'
 import TwitterIcon from 'public/assets/vector-icons/twitter-icon.svg'
 import MediumIcon from 'public/assets/vector-icons/medium-icon.svg'
-import { attributes as navigation } from 'content/navigation.md'
+// import { attributes as navigation } from 'content/navigation.md'
 import { useAnchorElement } from 'hooks'
 
 const Navigation: React.FC<ToolbarProps> = (props) => {

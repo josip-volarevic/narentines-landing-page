@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from 'react'
+import React, { useCallback, useState } from 'react'
 import { Grid, GridProps, Box, IconButton, Typography } from '@mui/material'
 import TextImportant from 'components/TextImportant'
 import RandomizeIcon from 'public/assets/vector-icons/randomize-icon.svg'
