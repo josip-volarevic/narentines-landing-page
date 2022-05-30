@@ -67,13 +67,13 @@ const Header: React.FC<AppBarProps> = (props) => {
 				) : null} */}
 				<Grid item xs={12} md={6} className='header-text-wrapper'>
 					<Typography className='header-text'>
-						The Narentines is a historically based project which features a collection of&nbsp;
+						”The Narentines“ are history inspired project which features a vast collection of&nbsp;
 						<TextImportant>8888</TextImportant> randomly generated&nbsp;
-						<TextImportant>NFTs</TextImportant>&nbsp; living on the&nbsp;
+						<TextImportant>NFTs</TextImportant>&nbsp;that lodge on the&nbsp;
 						<TextImportant>Solana</TextImportant> blockchain.
 						<br />
-						Gamified experience will give you an insight on how these fierce pirates used to enjoy all the good
-						they&apos;ve come across.
+						Gamified experience will give you actionable insight into how these fierce pirates used to enjoy all the
+						goods they&apos;ve come across.
 					</Typography>
 				</Grid>
 			</Grid>

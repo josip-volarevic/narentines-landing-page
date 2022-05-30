@@ -11,7 +11,7 @@ members:
     subtitle: content creator
     src: /assets/avatars/3.png
   - title: Mate Volarević
-    subtitle: community manager
+    subtitle: community mod
     src: /assets/avatars/4.png
   - title: Mate Žaja
     subtitle: creative director

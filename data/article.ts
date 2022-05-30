@@ -19,7 +19,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 1,
 			title: 'Build an amazing community',
-			text: "Gather pirates lovers' across internet.",
+			text: 'Gather fellow pirate lovers from the high seas of the internet.',
 			icon: {
 				src: pirateIcon,
 				position: {
@@ -41,7 +41,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 2,
 			title: 'Minting',
-			text: 'Bring your favorite rum drinker to the Solana blockchain.',
+			text: 'Bring your staunch rum drinker to the Solana blockchain and raise the sails for an adventure!',
 			icon: {
 				src: flagIcon,
 				position: {
@@ -63,7 +63,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 3,
 			title: 'Staking',
-			text: 'Let your Narentine enjoy and hang out with other Narentines, while you get $GOODS in return.',
+			text: 'Let your own Narentine enjoy another grog while socialising with other Narentines, and get some $GOODS in return.',
 			icon: {
 				src: lootIcon,
 				position: {
@@ -85,7 +85,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 4,
 			title: 'Preparation for raids',
-			text: 'Use your $GOODS to build your ships and equip the crew. They will need all the advantage they can get on those mysterious seas.',
+			text: "Use your $GOODS to build your sturdy ships and equip your brave and skilled crew. They'll need all the help they can get to keep the advantages while sailing those mysterious seas.",
 		},
 	},
 	{
@@ -93,7 +93,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 5,
 			title: 'Go on raids',
-			text: 'Send your ships on expeditions. Let the crew roam through the paths that are still unknown to the rest of the world and be amazed on what precious items they bring back.',
+			text: 'Send your ships on expeditions. Let the crew roam along the untrodden paths, still unknown to the local men, let alone to the rest of the world and just be amazed at what precious items they bring back.',
 			icon: {
 				src: raidsIcon,
 				position: {
@@ -115,7 +115,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 6,
 			title: 'Amphora aged wine',
-			text: 'After hard raids is there any better way to relax then with the bottle of rum? Well, there is! Relax with a wine, aged under the sea, and guarded by mysterious creatures.',
+			text: 'After hard raids, is there any better way to relax than with a bottle of rum? As a matter of fact, there is! Relax with wine, aged under the sea, guarded by mysterious creatures. All the thrill makes it taste even better...take our word for it!',
 			icon: {
 				src: amphoraIcon,
 				position: {
@@ -137,7 +137,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 7,
 			title: 'Dress like a proper pirate',
-			text: "What is a good pirate without, let's say: a tricorne or maybe an eye-patch? Not only that you will be the fierce ruler of the seas, but you will also be the most stylish ruler as well.",
+			text: "Are you a pirate anyway without, let's say, a tricorne or maybe an eye patch? No true pirate would ever pass the possibility to look like one as well. Therefore, not only will you be the fierce ruler of the seas, but you will be the most stylish fierce ruler if we had a say in it.",
 			icon: {
 				src: merchIcon,
 				position: {

@@ -9,6 +9,10 @@ body {
 	overflow: overlay;
 }
 
+svg {
+	color: black;
+}
+
 .text--important {
 	color: $important-color;
 }
