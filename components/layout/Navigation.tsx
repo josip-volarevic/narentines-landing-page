@@ -18,6 +18,9 @@ const Navigation: React.FC<ToolbarProps> = (props) => {
 				<Button variant='contained' href='/assets/litepaper.pdf' rel='noreferrer' target='_blank'>
 					Lite Paper
 				</Button>
+				<Button variant='contained' href='https://explore.narentines.com' rel='noreferrer' target='_blank'>
+					Map
+				</Button>
 			</Box>
 
 			<Box className='navigation-items navigation-items--right'>

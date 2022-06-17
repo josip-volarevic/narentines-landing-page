@@ -93,7 +93,7 @@ export const articleItems: ArticleGridItem[] = [
 		articleProps: {
 			index: 5,
 			title: 'Go on raids',
-			text: 'Send your ships on expeditions. Let the crew roam along the untrodden paths, still unknown to the local men, let alone to the rest of the world and just be amazed at what precious items they bring back.',
+			text: 'Send your vessels on expeditions. Let the crew roam along the untrodden paths, still unknown to the local men, let alone to the rest of the world and just be amazed at what precious items they bring back.',
 			icon: {
 				src: raidsIcon,
 				position: {
