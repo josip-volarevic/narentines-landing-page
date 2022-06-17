@@ -7,13 +7,10 @@ items:
     details: Narentines were a South Slavic tribe that inhabited the area of southern Dalmatia, the center of which was at the river Neretva, also known as Narenta at the time of their rule, hence the name Narentines!
   - id: when-mint-question
     summary: When is the mint?
-    details: Yet to be determined!
+    details: "Mint will be held on 18th of June as follows: whitelist mint will start at 6pm UTC and will last for 1 hour, public mint will start at 7pm UTC and will last for 24 hours"
   - id: mint-price-question
     summary: What is the price of minting a Narentines NFT?
-    details: Yet to be determined! We are closely monitoring the SOL price in this volatile market, and the final mint price will be suggested 2 weeks prior to the mint, and locked 2 days before the mint.
-  - id: how-to-whitelist-question
-    summary: How to get whitelisted?
-    details: Yet to be determined!
+    details: Whitelist price - 2.75 SOL, public price - 3 SOL
   - id: offer-support-question
     summary: How can I support this project?
     details: For now, you can help us build an amazing community on Discord and Twitter. In the near future, we expect additional vacancies for full-stack developers and community moderators.
