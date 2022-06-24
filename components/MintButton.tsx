@@ -43,7 +43,13 @@ const MintButton: React.FC = () => {
 	}
 
 	return (
-		<Button variant='contained' href='#mint' className='header-button' rel='noreferrer' target='_blank'>
+		<Button
+			variant='contained'
+			href='https://narentines.creatormachine.com'
+			className='header-button'
+			rel='noreferrer'
+			target='_blank'
+		>
 			<MintIcon />
 			Mint a Narentine
 		</Button>
