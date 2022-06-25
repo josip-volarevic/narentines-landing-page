@@ -45,15 +45,28 @@ const MintButton: React.FC = () => {
 	return (
 		<Button
 			variant='contained'
-			href='https://narentines.creatormachine.com'
+			href='https://www.magiceden.io/marketplace/narentinesnft'
 			className='header-button'
 			rel='noreferrer'
 			target='_blank'
 		>
 			<MintIcon />
-			Mint a Narentine
+			Buy on ME
 		</Button>
 	)
+
+	// return (
+	// 	<Button
+	// 		variant='contained'
+	// 		href='https://narentines.creatormachine.com'
+	// 		className='header-button'
+	// 		rel='noreferrer'
+	// 		target='_blank'
+	// 	>
+	// 		<MintIcon />
+	// 		Mint a Narentine
+	// 	</Button>
+	// )
 }
 
 export default MintButton
