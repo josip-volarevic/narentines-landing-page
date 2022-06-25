@@ -55,7 +55,7 @@ const Header: React.FC<AppBarProps> = (props) => {
 				<Grid item xs={12} md={6} className='header-text-wrapper'>
 					<Typography className='header-text'>
 						”The Narentines“ are history inspired project which features a vast collection of&nbsp;
-						<TextImportant>8888</TextImportant> randomly generated&nbsp;
+						<TextImportant>3333</TextImportant> randomly generated&nbsp;
 						<TextImportant>NFTs</TextImportant>&nbsp;that lodge on the&nbsp;
 						<TextImportant>Solana</TextImportant> blockchain.
 						<br />

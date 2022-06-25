@@ -16,7 +16,7 @@ class MyDocument extends Document {
 
 					<meta
 						name='description'
-						content='Narentines are the collection of 8888 randomly generated NFTs exploring the mysterious seas of Solana blockchain.'
+						content='Narentines are the collection of 3333 randomly generated NFTs exploring the mysterious seas of Solana blockchain.'
 					/>
 					<meta
 						name='keywords'

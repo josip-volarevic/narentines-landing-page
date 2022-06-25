@@ -50,7 +50,7 @@ const skins = [skinRanaArvalisFemale.src, skinRanaArvalisMale.src]
 
 export const exampleCollection: Collection = {
 	name: 'Narentine',
-	size: 8888,
+	size: 3333,
 	traits: [
 		{ name: 'Background', images: backgrounds, order: 1 },
 		{ name: 'Skin', images: skins, order: 2 },
