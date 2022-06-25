@@ -49,10 +49,10 @@
 		@include centeredRow;
 		position: relative;
 
-		.header-button,
+		.header-button-wrapper,
 		.header-button-overlay {
 			position: absolute;
-			top: 84%;
+			top: 80%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
@@ -60,11 +60,23 @@
 		.header-button {
 			border-radius: 0;
 			font-size: 1.5rem;
-			padding: 0.6rem 1rem;
-			width: max-content;
-			min-width: 290px;
+			padding: 0.4rem 2rem;
+			width: 100%;
+			min-width: 240px;
+			margin-bottom: 0.25rem;
+			display: flex;
+			justify-content: left;
 
-			@include clickable(-50%, -50%);
+			@include clickable;
+
+			.open-sea-icon {
+				width: 46px;
+				height: 38px;
+			}
+
+			.magic-eden-icon {
+				margin-top: -4px;
+			}
 
 			svg {
 				width: 40px;

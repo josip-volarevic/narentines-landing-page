@@ -59,8 +59,8 @@ const Header: React.FC<AppBarProps> = (props) => {
 						<TextImportant>NFTs</TextImportant>&nbsp;that lodge on the&nbsp;
 						<TextImportant>Solana</TextImportant> blockchain.
 						<br />
-						Gamified experience will give you actionable insight into how these fierce pirates used to enjoy all the
-						goods they&apos;ve come across.
+						Captivating lore will give you insight into how these fierce pirates used to enjoy all the goods
+						they&apos;ve come across, and raid their way into becoming infamous legends.
 					</Typography>
 				</Grid>
 			</Grid>

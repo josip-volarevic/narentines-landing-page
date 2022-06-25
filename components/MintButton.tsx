@@ -1,6 +1,8 @@
 import React from 'react'
-import { Button } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import MintIcon from 'public/assets/vector-icons/mint-icon.svg'
+import OpenSeaIcon from 'public/assets/vector-icons/open-sea-icon.svg'
+import MagicEdenIcon from 'public/assets/vector-icons/magic-eden-icon.svg'
 import tbaOverlayImage from 'public/assets/tba-overlay.png'
 import { useCountdown } from 'hooks'
 import Image from 'next/image'
@@ -43,16 +45,28 @@ const MintButton: React.FC = () => {
 	}
 
 	return (
-		<Button
-			variant='contained'
-			href='https://www.magiceden.io/marketplace/narentinesnft'
-			className='header-button'
-			rel='noreferrer'
-			target='_blank'
-		>
-			<MintIcon />
-			Buy on ME
-		</Button>
+		<Box className='header-button-wrapper'>
+			<Button
+				variant='contained'
+				href='https://opensea.io/collection/narentines-solana'
+				className='header-button'
+				rel='noreferrer'
+				target='_blank'
+			>
+				<OpenSeaIcon className='open-sea-icon' />
+				OpenSea
+			</Button>
+			<Button
+				variant='contained'
+				href='https://www.magiceden.io/marketplace/narentinesnft'
+				className='header-button'
+				rel='noreferrer'
+				target='_blank'
+			>
+				<MagicEdenIcon className='magic-eden-icon' />
+				MagicEden
+			</Button>
+		</Box>
 	)
 
 	// return (
