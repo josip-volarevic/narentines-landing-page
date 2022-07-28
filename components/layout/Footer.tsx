@@ -34,7 +34,7 @@ const Footer: React.FC<BoxProps> = (props) => {
 						{footer.linksTitle}
 					</Typography>
 					<Box className='footer-links'>
-						<Button aria-label='twitter' href='https://twitter.com/NarentinesNFT'>
+						<Button aria-label='twitter' href='https://twitter.com/Narentines'>
 							<TwitterIcon />
 						</Button>
 						<Button aria-label='discord' href='https://discord.com/invite/narentines'>

@@ -38,7 +38,7 @@ const Navigation: React.FC<ToolbarProps> = (props) => {
 						keepMounted
 					>
 						<MenuItem onClick={resetMenuAnchorEl}>
-							<Button color='secondary' href='https://twitter.com/NarentinesNFT' rel='noreferrer' target='_blank'>
+							<Button color='secondary' href='https://twitter.com/Narentines' rel='noreferrer' target='_blank'>
 								<TwitterIcon />
 								Twitter
 							</Button>
@@ -63,7 +63,7 @@ const Navigation: React.FC<ToolbarProps> = (props) => {
 					<Button
 						variant='contained'
 						aria-label='twitter'
-						href='https://twitter.com/NarentinesNFT'
+						href='https://twitter.com/Narentines'
 						rel='noreferrer'
 						target='_blank'
 					>

@@ -6,7 +6,7 @@ importantLinks:
     disabled: false
 links:
   - name: Twitter
-    href: https://twitter.com/NarentinesNFT
+    href: https://twitter.com/Narentines
     icon: /assets/vector-icons/twitter-icon.svg
     disabled: false
   - name: Discord
