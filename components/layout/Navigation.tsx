@@ -16,10 +16,13 @@ const Navigation: React.FC<ToolbarProps> = (props) => {
 					White Paper
 				</Button> */}
 				<Button variant='contained' href='/assets/litepaper.pdf' rel='noreferrer' target='_blank'>
-					Lite Paper
+					Litepaper
 				</Button>
 				<Button variant='contained' href='https://explore.narentines.com' rel='noreferrer'>
 					Map
+				</Button>
+				<Button variant='contained' href='https://bazaar.narentines.com' rel='noreferrer'>
+					Raffle
 				</Button>
 			</Box>
 
