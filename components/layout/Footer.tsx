@@ -7,7 +7,7 @@ import MediumIcon from 'public/assets/vector-icons/medium-icon.svg'
 import carbonFreeImage from 'public/assets/carbon-free.png'
 import { attributes as footer } from 'content/footer.md'
 import { attributes as company } from 'content/company.md'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 const Footer: React.FC<BoxProps> = (props) => {
 	return (
@@ -16,7 +16,7 @@ const Footer: React.FC<BoxProps> = (props) => {
 				<Grid item xs={12} md={4}>
 					{company.logo ? (
 						// TODO: implement company logo image
-						<Image layout='raw' src='' alt={company.shortName} />
+						<Image src='' alt={company.shortName} />
 					) : (
 						<Typography variant='body2' className='company-name'>
 							{company.shortName}
@@ -52,16 +52,7 @@ const Footer: React.FC<BoxProps> = (props) => {
 				</Grid>
 
 				<Grid item xs={12} md={4}>
-					<Box className='footer-image-wrapper'>
-						<Image
-							src={carbonFreeImage}
-							alt='carbon-free'
-							layout='responsive'
-							width={280}
-							height={72}
-							lazyBoundary='500px'
-						/>
-					</Box>
+					<Image className='footer-image' src={carbonFreeImage} alt='carbon-free' width={280} height={72} />
 				</Grid>
 			</Grid>
 		</Box>

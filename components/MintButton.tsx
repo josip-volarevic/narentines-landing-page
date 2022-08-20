@@ -5,7 +5,7 @@ import OpenSeaIcon from 'public/assets/vector-icons/open-sea-icon.svg'
 import MagicEdenIcon from 'public/assets/vector-icons/magic-eden-icon.svg'
 import tbaOverlayImage from 'public/assets/tba-overlay.png'
 import { useCountdown } from 'hooks'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 const expirationDate = 'Fri Jun 24 2022 20:00:00 GMT+0200 (Central European Summer Time)'
 
@@ -20,15 +20,7 @@ const MintButton: React.FC = () => {
 					<MintIcon />
 					Mint a Narentine
 				</Button>
-				<Image
-					src={tbaOverlayImage}
-					className='header-button-overlay'
-					layout='raw'
-					width={460}
-					height={120}
-					priority
-					alt=''
-				/>
+				<Image src={tbaOverlayImage} className='header-button-overlay' width={460} height={120} priority alt='' />
 			</>
 		)
 	}

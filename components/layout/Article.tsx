@@ -1,7 +1,7 @@
 import React from 'react'
 import { BoxProps, Box, Typography } from '@mui/material'
 import TextImportant from 'components/TextImportant'
-import Image, { StaticImageData } from 'next/image'
+import Image, { StaticImageData } from 'next/future/image'
 
 type Breakpoints = {
 	xs: string
@@ -43,7 +43,7 @@ const Article: React.FC<ArticleProps> = ({ title, text, icon, index, className, 
 						transform: `translate(-50%, -50%) ${icon.transform}`,
 					}}
 				>
-					<Image src={icon.src} layout='raw' width={180} height={180} className='article-image' alt='' />
+					<Image src={icon.src} width={180} height={180} className='article-image' alt='' />
 				</Box>
 			) : null}
 		</Box>

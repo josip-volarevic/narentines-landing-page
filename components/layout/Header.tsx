@@ -6,7 +6,8 @@ import Logo from 'public/assets/logo.svg'
 import pirateImage from 'public/assets/pirate.png'
 // import mapColorizedImage from 'public/assets/map-colorized.png'
 import mapColorizedImage from 'public/assets/map-colorized.webp'
-import Image from 'next/image'
+import Image from 'next/future/image'
+// import Image from 'next/image'
 import MintButton from 'components/MintButton'
 // import { attributes as header } from 'content/header.md'
 
@@ -15,13 +16,12 @@ const Header: React.FC<AppBarProps> = (props) => {
 
 	return (
 		<AppBar position='relative' color='transparent' className='header' {...props}>
-			<div className='background'>
+			<div className='background-wrapper'>
 				<div className='background-overlay' />
 				<Image
+					sizes='100vw'
 					src={mapColorizedImage}
-					layout='fill'
-					objectFit='cover'
-					style={{ zIndex: -2 }}
+					className='background-image'
 					placeholder='blur'
 					quality={50}
 					priority
@@ -43,7 +43,7 @@ const Header: React.FC<AppBarProps> = (props) => {
 				}}
 			>
 				<Grid item xs={12} md={6} className='header-image-wrapper'>
-					<Image src={pirateImage} className='header-image' alt='' layout='raw' height={620} width={360} priority />
+					<Image src={pirateImage} className='header-image' alt='' height={620} width={360} priority />
 					<MintButton />
 				</Grid>
 

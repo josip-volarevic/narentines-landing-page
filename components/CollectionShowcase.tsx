@@ -8,7 +8,7 @@ import downloadImage from 'public/assets/icons/download-image-icon.png'
 import { generateNft } from 'utils'
 import { useCancelablePromise } from 'hooks'
 import { Collection, DummyNFT } from 'models'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 interface Props extends GridProps {
 	collection: Collection
@@ -40,9 +40,9 @@ const CollectionShowcase: React.FC<Props> = ({ collection, className, ...props }
 
 			<Grid item xs={12} md={6} order={{ xs: 1, md: 2 }}>
 				<Box className='nft-image-wrapper'>
-					<Image src={nIconImage} className='short-logo' alt='' layout='raw' height={42} width={42} />
-					<Image src='/assets/ui/nft-frame.svg' className='nft-overlay' alt='' layout='raw' height={512} width={512} />
-					<Image src={nft.image} className='nft-image' alt={collection.name} layout='raw' height={512} width={512} />
+					<Image src={nIconImage} className='short-logo' alt='' height={42} width={42} />
+					<Image src='/assets/ui/nft-frame.svg' className='nft-overlay' alt='' height={512} width={512} />
+					<Image src={nft.image} className='nft-image' alt={collection.name} height={512} width={512} />
 				</Box>
 			</Grid>
 
@@ -58,14 +58,7 @@ const CollectionShowcase: React.FC<Props> = ({ collection, className, ...props }
 							href={nft.image}
 							download={`dummy-${collection.name}-#${nft.number}`}
 						>
-							<Image
-								src={downloadImage}
-								className='collection-showcase-icon'
-								alt=''
-								layout='raw'
-								width={34}
-								height={34}
-							/>
+							<Image src={downloadImage} className='collection-showcase-icon' alt='' width={34} height={34} />
 						</IconButton>
 					</Box>
 					<Typography className='collection-showcase-text'>

@@ -1,6 +1,6 @@
 {
 	"name": "narentines-landing-page",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
@@ -9,39 +9,42 @@
 		"start": "next start",
 		"lint": "next lint"
 	},
+	"overrides": {
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"@emotion/styled": "^11.10.0"
+	},
 	"dependencies": {
-		"@emotion/react": "^11.9.0",
-		"@emotion/styled": "^11.8.1",
-		"@mui/material": "^5.6.3",
-		"@mui/styles": "^5.6.2",
-		"@mui/types": "^7.1.3",
+		"@emotion/react": "^11.10.0",
+		"@emotion/styled": "^11.10.0",
+		"@mui/material": "^5.10.1",
 		"merge-images": "^2.0.0",
 		"netlify-cms-app": "^2.15.72",
 		"next": "^12.1.7-canary.12",
-		"next-pwa": "^5.5.2",
-		"react": "18.0.0",
-		"react-dom": "18.0.0",
+		"next-pwa": "^5.5.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
 		"react-gtm-module": "^2.0.11",
-		"sharp": "^0.30.4"
+		"sharp": "^0.30.7"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.17.9",
-		"@babel/preset-react": "^7.16.7",
-		"@netlify/plugin-nextjs": "^4.7.0",
-		"@svgr/webpack": "^6.2.1",
+		"@babel/core": "^7.18.10",
+		"@babel/preset-react": "^7.18.6",
+		"@netlify/plugin-nextjs": "^4.16.0",
+		"@svgr/webpack": "^6.3.1",
 		"@types/merge-images": "^1.2.1",
-		"@types/node": "17.0.27",
-		"@types/react": "18.0.7",
-		"@types/react-dom": "18.0.0",
+		"@types/node": "^18.7.8",
+		"@types/react": "^18.0.17",
+		"@types/react-dom": "^18.0.6",
 		"@types/react-gtm-module": "^2.0.1",
-		"@typescript-eslint/eslint-plugin": "^5.26.0",
-		"@typescript-eslint/parser": "^5.28.0",
-		"eslint": "^8.14.0",
-		"eslint-config-next": "^12.1.5",
+		"@typescript-eslint/eslint-plugin": "^5.33.1",
+		"@typescript-eslint/parser": "^5.33.1",
+		"eslint": "^8.22.0",
+		"eslint-config-next": "^12.2.5",
 		"eslint-config-prettier": "^8.5.0",
 		"frontmatter-markdown-loader": "^3.7.0",
-		"next-sitemap": "^2.5.20",
-		"sass": "^1.51.0",
-		"typescript": "4.6.3"
+		"next-sitemap": "^3.1.21",
+		"sass": "^1.54.5",
+		"typescript": "^4.7.4"
 	}
 }

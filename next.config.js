@@ -5,7 +5,7 @@ module.exports = withPWA({
 	reactStrictMode: true,
 	experimental: {
 		images: {
-			layoutRaw: true,
+			allowFutureImage: true,
 		},
 	},
 	sassOptions: {
@@ -27,7 +27,7 @@ module.exports = withPWA({
 	},
 	pwa: {
 		dest: 'public',
-		disable: process.env.NEXT_NODE_ENV === 'dev',
+		disable: process.env.NODE_ENV === 'development',
 		mode: 'production',
 	},
 })
